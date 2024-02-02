@@ -1,0 +1,401 @@
+@media screen and (max-width: 1200px) {
+    .row {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+    #header{
+      background: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-bottom: 1px solid #ffbc0d;
+      width: 100%;
+      z-index: 100;
+  }
+  #header .row{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      flex-wrap: wrap;
+  }
+  #header .row:hover + .bgbox{
+     /* + 기호는 동생 박스를 같이 사용할 때 사용할 수 있음*/
+      display: none;
+  }
+  #header .bgbox{
+    border-top: 1px solid #e0dede;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      left: 0;
+      height: 350px;
+      background: #fff;
+      z-index: 99;
+      display: none;
+  }
+  #header #nav{
+      display: block;
+      width: 100%;
+      padding-left: 0px;
+  }
+  #header .row h1{
+      padding: 20px 10px 10px 10px; 
+      flex: 1 0 126px; 
+  }
+  #header .row .menuopen {
+      display: flex;
+      font-size: 30px;
+      align-items: center;
+  }
+  #header #nav ul.depth1{
+      display: block;
+      font-weight: bold;
+  }
+  #header .row #nav ul.depth1 > li {
+      text-align: left;
+      position: relative;
+      font-size: 20px;
+      margin: 0px;
+      padding: 0px;
+      display: none;  /*일단은 none 상태 보여줄 땐 block 해야함*/
+  }
+  #header .row #nav ul.depth1 > li > a{
+      border-top: 1px solid #e0dede;
+      display: block;
+      align-items: center;
+      padding: 10px 10px;
+  }
+  #header .row #nav ul.depth1 > li:hover > a{
+      border-bottom: 0px solid #ffbc0d;
+  }
+  #header .row #nav ul.depth1 > li:hover ul.depth2{
+    display: block;
+  }
+  #header #nav ul.depth2{
+      display: none;
+      position: static;
+      top: 100%; /*앱솔루트로 인한 100%는 부모 크기*/
+      left: 0;
+      background-color: #fff;
+      border-top: 0px solid #e0dede;
+      color: #808080; 
+      font-size: 16px;
+      z-index: 999;
+      padding: 30px 10px 30px;
+      white-space: nowrap;
+  }
+  #header #nav ul.depth1:hover ul.depth2{
+      display: none;
+      /* border-top: 3px solid #ffbc0d; */
+  }
+  #header .row #nav ul.depth2 > li{
+      margin: 13px 0 0;
+      text-align: left; /*수정: 왼쪽 정렬 추가 a는 인라인 성격이라서 li에 얼라인을 줘야 이동함*/
+  }
+  
+  #header .row #nav ul.depth2 > li > a {
+      border: 1px solid transparent;
+      /* display: block; */
+      
+      margin : 10px; /* 수정: 패딩 조정 */
+  }
+  #header .row #nav ul.depth2 > li > a:hover{
+      border-bottom: 1px solid #000;
+      color: #000;
+  }
+  #header #nav ul.lang{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 20px 0  ;
+      border-top: 1px solid #e0dede;
+  }
+  #header #nav ul.lang .renter1,
+  #header #nav ul.lang .renter2,
+  #header #nav ul.lang .renter3{
+      padding: 8px;
+      text-align: center;
+      border-radius: 48px;
+      margin: 2px;
+      width: 80px;
+      height: 36px;
+      font-size: 13px;
+      color: #fff;
+  }
+  #header #nav ul.lang .renter1{
+      background: #db0007;
+  }
+  #header #nav ul.lang .renter2{
+      background: #d87e00;
+  }
+  #header #nav ul.lang .renter3{
+      background: #264a36;
+  }
+  /*==========================================================================================*/
+  #section{
+      position: relative;
+      margin-top: 141px;
+  }
+  #section .slide{
+      position: relative;
+  }
+  #section .slide img{
+      max-width: 100%;
+  }
+  /*===================================================================================================*/
+  #section .slideouter .slideinner{
+      position: relative
+  }
+  #section .slideouter .slideinner button.slick-arrow{
+      position: absolute;
+      color: #fff;
+      font-size: 90px;
+      top: 40%;
+      border: none;
+      background: none;
+      cursor: pointer;
+      opacity: 80%;
+  }
+  #section .slideouter .slideinner button.slick-prev{
+      left: 50px;
+      z-index: 999;
+  }
+  #section .slideouter .slideinner button.slick-next{
+      right: 50px;
+  }
+  #section .slideouter .slideinner ul.slick-dots{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 50px;
+  }
+  #section .slideouter .slideinner ul.slick-dots li{
+      display: inline-block;
+      margin: 0 5px;
+  }
+  #section .slideouter .slideinner ul.slick-dots button{
+      border-radius: 50%;
+      width: 9px;
+      height: 9px;
+      text-indent: 9999px;
+      overflow: hidden;
+      background: #fff;
+      border: none;
+  }
+  #section .slideouter .slideinner ul.slick-dots li.slick-active button{
+      background: #ffbc0d;
+      width: 25px;
+      height: 8px;
+      border-radius: 20% / 50%;
+  }
+  /*===================================================================================================*/
+  #section .LIVE{
+      padding: 30px 0 40px;
+      margin: 0 100px 0 100px;
+  }
+  #section .LIVE h2{
+      font-size: 40px;
+      color: #292929;
+      margin: 0 0 20px 270px;
+  }
+  #section .LIVE .ADV{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0 0 0;
+      justify-content: center;
+      font-weight: bold;
+  }
+  #section .LIVE .ADV li{
+      flex: 0 0 30%;
+  
+  }
+  #section .LIVE .ADV li p {
+      margin: 0; /* 기본 마진을 제거하여 더 깔끔하게 보이도록 설정 */
+      display: flex;
+      flex-direction: column;
+      padding: 24px 30px;
+      font-size: 18px;
+  }
+  #section .LIVE .ADV .photo{
+      border: 0px solid rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 0 0 50px 0;
+      margin: 30px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  #section .LIVE .ADV a{
+      position: relative;
+  }
+  #section .LIVE .ADV .photo:hover{
+      transform: scale(1.02);
+      transform-origin: center;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+     
+  }
+  #section .LIVE .ADV .photo:hover img{
+      opacity: 0.8;
+  }
+  #section .LIVE .ADV .photo img{
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+  }
+  /*===================================================================================================*/
+  #section .notice {
+      background:url(../img/bg_visual_store01.jpg) center / cover;
+      background-attachment: fixed;
+      height: 450px;
+      position: relative;
+      display: none;
+  }
+  #section .notice .overlay{
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+  
+      background: rgba(0, 0, 0, 0.4);
+  }
+  #section .notice .text{  
+      color: #fff;
+      text-align: left;
+      position: absolute;
+  
+  font-family: 'Paytone One';
+  text-shadow: -.1em .1em #182642;
+  }
+  #section .notice .text h2{
+      font-size: 30px;
+      padding: 20px;
+      margin: 30px 30px 30px 60px;
+  }
+  #section .notice .text p{
+      font-size: 18px;
+      padding: 20px;
+      margin:30px 30px 30px 60px;
+      border-bottom: 1px solid #fff;
+  }
+  #section .notice .text p > span{
+      display: block;
+  }
+  /*===================================================================================================*/
+  #section .advpop{
+      color: white;
+      position: fixed;
+      bottom: 90px;
+      left: 1600px;
+      z-index: 2;
+      display: none;
+  }
+  /*==================================================================================*/
+  #section .contact{
+      padding: 50px 0 200px 0 ;
+      text-align: center;
+      display: flex; 
+  }
+  #section .contact .position {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0; 
+     justify-content: space-between;
+  }
+  #section .contact .position li {
+      font-size: 14px;
+      color: #444;
+      border: 1px solid #999;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-right: 10px;
+      padding: 30px;
+      display: inline-block;
+      margin: 50px 0; 
+      position: relative;
+  }
+  #section .contact .position li:not(:last-child) {
+      margin-right: 36px;
+  }
+  #section .contact .position li:hover{
+      background: #000;
+      color:#fff ;
+  }
+  #section .contact .position li:hover img{
+      filter: brightness(3000%);
+  }
+  #section .contact .search{
+      display: flex;
+      padding: 0 50px 50px 50px;
+  }
+  #section .contact .search #message{
+      font-size: 14px;
+      text-align: center;
+      border-radius: 50px;
+      max-width: 900px;
+      height: 75px;
+      display: inline-block;
+  }
+  #send{
+      font-size: 14px;
+      background: #ffbc0d;
+      border-radius: 50px;
+      padding: 20px;
+      border: none;
+      margin-left: 10px;
+      display: inline-block;
+      height: 75px;
+      width: 150px;
+      cursor: pointer;
+  }
+  /*===================================================================================================*/
+  #footer{
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 50px 0;
+      background: #292929;
+      height: 259px;
+  }
+  #footer .btmmenu{
+      display: flex;
+      justify-content: space-between;
+  }
+  #footer .btmmenu .companyinfo{
+      display: flex;
+      font-size: 14px;
+      font-weight: bold;
+  }
+  #footer .btmmenu .companyinfo .addr{
+      padding-left: 50px;
+  }
+  #footer .btmmenu .companyinfo .privacy{
+      color: #ffff00;
+  }
+  #footer .btmmenu .companyinfo li{
+  color: #fff;
+  padding: 5px 0 0 0px;
+  
+  }
+  #footer .btmmenu .companyinfo p{
+      color: #888;
+      padding: 5px 0 0 0px;
+  }
+  #footer .btmmenu .companyinfo p > span{
+      display: block;
+  }
+  #footer .btmmenu .sns a{
+      display: inline-block;
+      padding: 10px;
+      font-size: 40px;
+      color: #fff;
+      transition: all 0.3s;
+  }
+  #footer .btmmenu .sns a:hover{
+      color: #000
+  }
+  
+  }
