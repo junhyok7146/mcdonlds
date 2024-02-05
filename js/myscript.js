@@ -24,3 +24,19 @@ $(this).removeClass("fa-play").addClass("fa-pause");
 
 });
 
+// $("#nav .depth1 > li").on("mouseover mouseout",function(){
+//     if($("html").hasClass("pc")){
+//         $(this).toggleClass("on")
+//     }
+// });
+$("#nav .depth1 > li").on("click",function(){
+    if($("html").hasClass("mobile")){
+        $(this).toggleClass("on")
+        $(this).siblings().removeClass("on")
+    }
+});
+$(document).ready(function () {
+    $("#header .row .menuopen").click(function () {
+      $("#header #nav ul.depth1").toggleClass("on");
+    });
+  });

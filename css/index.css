@@ -158,6 +158,10 @@ ul{
 #section .slide img{
     max-width: 100%;
 }
+  #section .slide video{
+    height: auto;
+    max-width: 100%;
+  }
 /*===================================================================================================*/
 #section .slideouter .slideinner{
     position: relative
