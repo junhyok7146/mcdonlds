@@ -42,10 +42,10 @@ ul{
     justify-content: space-between;
     position: relative;
 }
-#header .row:hover + .bgbox{ /* + 기호는 동생 박스를 같이 사용할 때 사용할 수 있음*/
+/* + 기호는 동생 박스를 같이 사용할 때 사용할 수 있음*/
+/* #header .row:hover + .bgbox{ 
     display: block;
-
-}
+} */
 #header .bgbox{
     border-top: 1px solid #e0dede;
     position: absolute;
@@ -102,10 +102,10 @@ ul{
     padding: 30px 10px 30px;
     white-space: nowrap;
 }
-#header #nav ul.depth1:hover ul.depth2{
-    display: block;
+/* #header #nav ul.depth1:hover ul.depth2{
+    display: block; */
     /* border-top: 3px solid #ffbc0d; */
-}
+/* } */
 #header .row #nav ul.depth2 > li{
     margin: 13px 0 0;
     text-align: left; /*수정: 왼쪽 정렬 추가 a는 인라인 성격이라서 li에 얼라인을 줘야 이동함*/
@@ -356,18 +356,17 @@ text-shadow: -.1em .1em #182642;
     filter: brightness(3000%);
 }
 #section .contact .search{
-    display: flex;
     padding: 0 50px 50px 50px;
-    /* justify-content: ; */
+    overflow: hidden;
 }
 #section .contact .search #message{
     font-size: 14px;
     text-align: center;
     border-radius: 50px;
-    max-width: 900px;
+    width: 85%;
     height: 75px;
     display: inline-block;
-    flex: 1 0 65%;
+    float: left;
 }
 #send{
     font-size: 14px;
@@ -378,8 +377,9 @@ text-shadow: -.1em .1em #182642;
     margin-left: 10px;
     display: inline-block;
     height: 75px;
-    width: 150px;
+    width: 14%;
     cursor: pointer;
+    float: left;
 }
 /*===================================================================================================*/
 #footer{

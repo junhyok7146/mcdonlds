@@ -333,17 +333,17 @@
     filter: brightness(3000%);
 }
 #section .contact .search{
-    display: flex;
+    overflow: hidden;
     padding: 0 50px 50px 50px;
 }
 #section .contact .search #message{
     font-size: 14px;
     text-align: center;
     border-radius: 50px;
-    max-width: 900px;
+    width: 65%;
     height: 75px;
     display: inline-block;
-
+    float: left;
 }
 #send{
     font-size: 14px;
@@ -354,13 +354,14 @@
     margin-left: 10px;
     display: inline-block;
     height: 75px;
-    width: 100px;
+    width: 30%;
     cursor: pointer;
+    float: left;
 }
   /*===================================================================================================*/
   #footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 10px 0 0  0;
+    padding: 0 0 0  0;
     background: #292929;
     height: 259px;
   }

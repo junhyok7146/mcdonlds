@@ -24,11 +24,16 @@ $(this).removeClass("fa-play").addClass("fa-pause");
 
 });
 
-// $("#nav .depth1 > li").on("mouseover mouseout",function(){
-//     if($("html").hasClass("pc")){
-//         $(this).toggleClass("on")
-//     }
-// });
+$("#nav .depth1").on("mouseover mouseout",function(){
+    if($("html").hasClass("pc")){
+        $(this).find(".depth2").stop().slideToggle(200)
+        $(".bgbox").stop().slideToggle(200)
+    }
+});
+// $(".bgbox").on("mouseover",function(){
+//     $(this).slideDown(0)
+// })
+
 $("#nav .depth1 > li").on("click",function(){
     if($("html").hasClass("mobile")){
         $(this).toggleClass("on")
@@ -40,3 +45,5 @@ $(document).ready(function () {
       $("#header #nav ul.depth1").toggleClass("on");
     });
   });
+
+
