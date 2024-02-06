@@ -5,7 +5,41 @@
     padding: 0 10px;
   }
 }
-
+@media screen and (max-width: 750px){
+  #section .slide .video{
+    display: none;
+  }
+  #section .slide img {
+    max-width: 100%;
+  }
+  #section .slide1 img{
+    content: url(../img/슬라이드1.jpg);
+  }
+  #section .slide2 img{
+    content: url(../img/슬라이드2.jpg);
+  }
+  #section .slide3 img{
+    content: url(../img/슬라이드3.jpg);
+  }
+  #section .slide4 img{
+    content: url(../img/슬라이드4.jpg);
+  }
+  #section .slide5 img{
+    content: url(../img/슬라이드5.jpg);
+  }
+  #section .slide6 img{
+    content: url(../img/슬라이드6.jpg);
+  }
+  #section .slide7 img{
+    content: url(../img/슬라이드7.jpg);
+  }
+  #section .slide8 img{
+    content: url(../img/슬라이드8.jpg);
+  }
+  #section .slide9 img{
+    content: url(../img/슬라이드9.png);
+  }
+}
 @media screen and (max-width: 1150px) {
   #header {
     background: #fff;
@@ -148,9 +182,7 @@
   #section .slide {
     position: relative;
   }
-  #section .slide img {
-    max-width: 100%;
-  }
+  
   #section .slide video{
     height: auto;
     width: 100%;
@@ -340,7 +372,7 @@
     font-size: 14px;
     text-align: center;
     border-radius: 50px;
-    width: 65%;
+    width: 67%;
     height: 75px;
     display: inline-block;
     float: left;
@@ -373,12 +405,13 @@
   }
   #footer .btmmenu .companyinfo {
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     text-align: left;
   }
   #footer .btmmenu .companyinfo .addr {
     padding-left: 50px;
+    
   }
   #footer .btmmenu .companyinfo .privacy {
     color: #ffff00;

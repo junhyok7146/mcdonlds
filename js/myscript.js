@@ -30,9 +30,6 @@ $("#nav .depth1").on("mouseover mouseout",function(){
         $(".bgbox").stop().slideToggle(200)
     }
 });
-// $(".bgbox").on("mouseover",function(){
-//     $(this).slideDown(0)
-// })
 
 $("#nav .depth1 > li").on("click",function(){
     if($("html").hasClass("mobile")){
@@ -45,5 +42,15 @@ $(document).ready(function () {
       $("#header #nav ul.depth1").toggleClass("on");
     });
   });
+
+
+$(document).ready(function(){
+    $('#section .contact .position li').click(function(){
+        $(this).css({'background-color': '', 'color': '#444'});
+        $(this).find('img').css('filter', '');
+        $(this).css({'background-color': '#000', 'color': '#fff'});
+        $(this).find('img').css('filter', 'brightness(3000%)');
+    });
+});
 
 
