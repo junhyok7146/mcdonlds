@@ -265,6 +265,10 @@ ul{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+#section .LIVE #showMore{
+    background: #fff;
+    border: none;
+}
 /*===================================================================================================*/
 #section .notice {
     background:url(../img/bg_visual_store01.jpg) center / cover;
@@ -336,7 +340,8 @@ text-shadow: -.1em .1em #182642;
 }
 #section .contact .position li {
     font-size: 14px;
-    color: #444;
+    background-color: #fff;
+    color: #000;
     border: 1px solid #999;
     border-radius: 10px;
     font-weight: bold;
@@ -349,13 +354,13 @@ text-shadow: -.1em .1em #182642;
 #section .contact .position li:not(:last-child) {
     margin-right: 36px;
 }
-#section .contact .position li:hover{
+/* #section .contact .position li:hover{
     background: #000;
     color:#fff ;
 }
-#section .contact .position li:hover img{
+/* #section .contact .position li:hover img{
     filter: brightness(3000%);
-}
+} */ */
 #section .contact .search{
     padding: 0 50px 50px 50px;
     overflow: hidden;
@@ -422,7 +427,4 @@ padding: 5px 0 0 0px;
     font-size: 40px;
     color: #fff;
     transition: all 0.3s;
-}
-#footer .btmmenu .sns a:hover{
-    color: #000
 }

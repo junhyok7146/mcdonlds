@@ -6,9 +6,6 @@
   }
 }
 @media screen and (max-width: 750px){
-  .slide10{
-    display: none;
-  }
   #section .slide img {
     max-width: 100%;
   }
@@ -277,6 +274,9 @@
 #section .LIVE .ADV .photo img{
   width: 100%;
 }
+#section .slide10 {
+  display: none;
+}
   /*===================================================================================================*/
   #section .notice {
     background: url(../img/bg_visual_store01.jpg) center / cover;
@@ -346,7 +346,8 @@
 }
 #section .contact .position li {
     font-size: 14px;
-    color: #444;
+    background-color: #fff;
+    color: #000;
     border: 1px solid #999;
     border-radius: 10px;
     font-weight: bold;
@@ -360,28 +361,21 @@
 #section .contact .position li:not(:last-child) {
     margin-right: 0px;
 }
-#section .contact .position li:hover{
-    background: #000;
-    color:#fff ;
-}
-#section .contact .position li:hover img{
-    filter: brightness(3000%);
-}
 #section .contact .search{
     overflow: hidden;
     padding: 0 50px 50px 50px;
 }
 #section .contact .search #message{
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     border-radius: 50px;
-    width: 67%;
+    width: 60%;
     height: 75px;
     display: inline-block;
     float: left;
 }
 #send{
-    font-size: 14px;
+    font-size: 12px;
     background: #ffbc0d;
     border-radius: 50px;
     padding: 20px;
