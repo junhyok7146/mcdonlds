@@ -6,8 +6,9 @@
   }
 }
 @media screen and (max-width: 750px){
-  #section .slide .video{
+  #section .slide video{
     display: none;
+    overflow: hidden;
   }
   #section .slide img {
     max-width: 100%;
@@ -38,6 +39,9 @@
   }
   #section .slide9 img{
     content: url(../img/슬라이드9.png);
+  }
+  #section .slideouter .slideinner button.slick-arrow{
+  
   }
 }
 @media screen and (max-width: 1150px) {

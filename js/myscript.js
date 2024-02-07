@@ -54,3 +54,11 @@ $(document).ready(function(){
 });
 
 
+// $(document).ready(function(){
+//     $('#section .contact .position li').click(function(){
+//         var backgroundColor = $(this).css('background-color');
+//         var color = $(this).css('color');  
+      
+//         $(this).css({'background-color': color, 'color': backgroundColor});
+//     });
+// });

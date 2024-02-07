@@ -56,6 +56,7 @@ ul{
     background: #fff;
     z-index: 99;
     display: none;
+    border-bottom: 1px solid #ffbc0d;
 }
 #header #nav{
     display: flex;
