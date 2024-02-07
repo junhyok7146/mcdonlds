@@ -111,11 +111,9 @@ ul{
     margin: 13px 0 0;
     text-align: left; /*수정: 왼쪽 정렬 추가 a는 인라인 성격이라서 li에 얼라인을 줘야 이동함*/
 }
-
 #header .row #nav ul.depth2 > li > a {
     border-bottom: 1px solid transparent;
     /* display: block; */
-    
     margin : 10px; /* 수정: 패딩 조정 */
 }
 #header .row #nav ul.depth2 > li > a:hover{
@@ -217,6 +215,7 @@ ul{
 #section .LIVE{
     padding: 30px 0 40px;
     margin: 0 100px 0 100px;
+
 }
 #section .LIVE h2{
     font-size: 40px;
@@ -264,10 +263,6 @@ ul{
 #section .LIVE .ADV .photo img{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-}
-#section .LIVE #showMore{
-    background: #fff;
-    border: none;
 }
 /*===================================================================================================*/
 #section .notice {
@@ -354,13 +349,6 @@ text-shadow: -.1em .1em #182642;
 #section .contact .position li:not(:last-child) {
     margin-right: 36px;
 }
-/* #section .contact .position li:hover{
-    background: #000;
-    color:#fff ;
-}
-/* #section .contact .position li:hover img{
-    filter: brightness(3000%);
-} */ */
 #section .contact .search{
     padding: 0 50px 50px 50px;
     overflow: hidden;
@@ -371,7 +359,7 @@ text-shadow: -.1em .1em #182642;
     border-radius: 50px;
     width: 85%;
     height: 75px;
-    display: inline-block;
+    display: block;
     float: left;
 }
 #send{
@@ -381,7 +369,7 @@ text-shadow: -.1em .1em #182642;
     padding: 20px;
     border: none;
     margin-left: 10px;
-    display: inline-block;
+    display: block;
     height: 75px;
     width: 14%;
     cursor: pointer;
@@ -412,7 +400,6 @@ text-shadow: -.1em .1em #182642;
 #footer .btmmenu .companyinfo li{
 color: #fff;
 padding: 5px 0 0 0px;
-
 }
 #footer .btmmenu .companyinfo p{
     color: #888;
@@ -424,7 +411,4 @@ padding: 5px 0 0 0px;
 #footer .btmmenu .sns a{
     display: inline-block;
     padding: 0 5px;
-    font-size: 40px;
-    color: #fff;
-    transition: all 0.3s;
 }

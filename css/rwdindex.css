@@ -42,13 +42,6 @@
 }
 @media screen and (max-width: 1150px) {
   #header {
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid #ffbc0d;
-    width: 100%;
     z-index: 1000;
   }
   #header .row {
@@ -57,29 +50,10 @@
     position: relative;
     flex-wrap: wrap;
   }
-  #header .row:hover + .bgbox {
-    /* + 기호는 동생 박스를 같이 사용할 때 사용할 수 있음*/
-    display: none;
-  }
-  #header .bgbox {
-    border-top: 1px solid #e0dede;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0;
-    height: 350px;
-    background: #fff;
-    z-index: 99;
-    display: none;
-  }
   #header #nav {
     display: block;
     width: 100%;
     padding-left: 0px;
-  }
-  #header .row h1 {
-    padding: 20px 10px 10px 10px;
-    flex: 1 0 126px;
   }
   #header .row .menuopen {
     display: flex;
@@ -88,15 +62,12 @@
   }
   #header #nav ul.depth1 {
     display: none;
-    font-weight: bold;
   }
   #header .row #nav ul.depth1.on {
     display: block;
   }
   #header .row #nav ul.depth1 > li {
     text-align: left;
-    position: relative;
-    font-size: 20px;
     margin: 0px;
     padding: 0px;
     display: block; /*일단은 none 상태 보여줄 땐 block 해야함*/
@@ -104,7 +75,6 @@
   #header .row #nav ul.depth1 > li > a {
     border-top: 1px solid #e0dede;
     display: block;
-    align-items: center;
     padding: 10px 10px;
   }
   #header .row #nav ul.depth1 > li:hover > a {
@@ -114,65 +84,13 @@
     display: block;
   }
   #header #nav ul.depth2 {
-    display: none;
     position: static;
-    top: 100%; /*앱솔루트로 인한 100%는 부모 크기*/
-    left: 0;
-    background-color: #fff;
     border-top: 0px solid #e0dede;
-    color: #808080;
-    font-size: 16px;
-    z-index: 999;
-    padding: 30px 10px 30px;
-    white-space: nowrap;
-  }
-  #header #nav ul.depth1:hover ul.depth2 {
-    display: none;
-    /* border-top: 3px solid #ffbc0d; */
-  }
-  #header .row #nav ul.depth2 > li {
-    margin: 13px 0 0;
-    text-align: left; /*수정: 왼쪽 정렬 추가 a는 인라인 성격이라서 li에 얼라인을 줘야 이동함*/
-  }
-
-  #header .row #nav ul.depth2 > li > a {
-    border: 1px solid transparent;
-    /* display: block; */
-
-    margin: 10px; /* 수정: 패딩 조정 */
-  }
-  #header .row #nav ul.depth2 > li > a:hover {
-    border-bottom: 1px solid #000;
-    color: #000;
   }
   #header #nav ul.lang {
-    display: flex;
-    align-items: center;
-    text-align: center;
     justify-content: center;
     padding: 20px 0;
     border-top: 1px solid #e0dede;
-  }
-  #header #nav ul.lang .renter1,
-  #header #nav ul.lang .renter2,
-  #header #nav ul.lang .renter3 {
-    padding: 8px;
-    text-align: center;
-    border-radius: 48px;
-    margin: 2px;
-    width: 80px;
-    height: 36px;
-    font-size: 13px;
-    color: #fff;
-  }
-  #header #nav ul.lang .renter1 {
-    background: #db0007;
-  }
-  #header #nav ul.lang .renter2 {
-    background: #d87e00;
-  }
-  #header #nav ul.lang .renter3 {
-    background: #264a36;
   }
   /*==========================================================================================*/
   #section {
@@ -389,10 +307,12 @@
 }
   /*===================================================================================================*/
   #footer {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0 0 0  0;
-    background: #292929;
-    height: 259px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: column;
   }
   #footer .btmmenu {
     display: flex;
@@ -407,31 +327,12 @@
     text-align: left;
   }
   #footer .btmmenu .companyinfo .addr {
-    padding-left: 50px;
-    
+    padding-left: 20px;
   }
-  #footer .btmmenu .companyinfo .privacy {
-    color: #ffff00;
-  }
-  #footer .btmmenu .companyinfo li {
-    color: #fff;
-    padding: 5px 0 0 0px;
-  }
-  #footer .btmmenu .companyinfo p {
-    color: #888;
-    padding: 5px 0 0 0px;
-  }
-  #footer .btmmenu .companyinfo p > span {
-    display: block;
-  }
-  #footer .btmmenu .sns a {
-    display: inline-block;
-    padding: 10px;
-    font-size: 30px;
-    color: #fff;
-    transition: all 0.3s;
-  }
-  #footer .btmmenu .sns a:hover {
-    color: #000;
-  }
+
+
+
+
+
+
 }
