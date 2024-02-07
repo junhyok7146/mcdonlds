@@ -6,9 +6,8 @@
   }
 }
 @media screen and (max-width: 750px){
-  #section .slide video{
+  .slide10{
     display: none;
-    overflow: hidden;
   }
   #section .slide img {
     max-width: 100%;
