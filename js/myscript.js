@@ -54,6 +54,19 @@ $("#nav .depth1 > li").on("click",function(){
         $(this).siblings().removeClass("on")
     }
 });
+// $("#nav .depth1 > li").on("click", function(){
+//     if($("html").hasClass("mobile")){
+//         $(this).toggleClass("on");
+//         $(this).siblings().removeClass("on");
+
+//         // 클릭한 li 요소의 depth2를 열거나 닫음
+//         $(this).find(".depth2").slideToggle();
+//         $(".bgbox").slideToggle();
+
+//         // 다른 형제 li 요소들의 depth2를 닫음
+//         // $(this).siblings().find(".depth2").slideUp(200);
+//     }
+// });
  //==================================================================================   
 
     $("#header .row .menuopen").click(function () {
