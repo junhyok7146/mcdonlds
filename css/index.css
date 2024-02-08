@@ -165,10 +165,6 @@ ul{
 #section .slideouter .slideinner{
     position: relative
 }
-#section .slideouter .slideinner .ucc{
-    width: 100%;
-    height: 456px;
-}
 #section .slideouter .slideinner button.slick-arrow{
     position: absolute;
     color: #fff;

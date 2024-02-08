@@ -60,10 +60,10 @@
     font-size: 30px;
     align-items: center;
   }
-  #header #nav ul.depth1 {
+  #header #nav ul.depth1{
     display: none;
   }
-  #header .row #nav ul.depth1.on {
+  #header #nav ul.depth1.on {
     display: block;
   }
   #header .row #nav ul.depth1 > li {
@@ -77,9 +77,9 @@
     display: block;
     padding: 10px 10px;
   }
-  #header .row #nav ul.depth1 > li:hover > a {
+  #header .row #nav ul.depth1 > li:hover > a{
     border-bottom: 0px solid #ffbc0d;
-  }
+}
   #header .row #nav ul.depth1 > li.on ul.depth2 {
     display: block;
   }
@@ -311,7 +311,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: center;
     flex-direction: column;
   }
   #footer .btmmenu {
@@ -329,10 +329,4 @@
   #footer .btmmenu .companyinfo .addr {
     padding-left: 20px;
   }
-
-
-
-
-
-
 }
